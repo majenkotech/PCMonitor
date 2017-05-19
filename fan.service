@@ -1,0 +1,10 @@
+[Unit]
+Description=Fan and Temperature Monitor
+Documentation=man:fan(8)
+
+[Service]
+ExecStart=/usr/sbin/fan -v 0403 -p a661 -s CK2660A053000C
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
